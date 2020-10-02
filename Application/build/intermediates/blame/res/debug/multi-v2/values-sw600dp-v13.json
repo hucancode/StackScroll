@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nguyenhuu/Documents/GitHub/StackingCard/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/nguyenhuu/Documents/GitHub/StackScroll/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/res/values-sw600dp/template-dimens.xml",
-                    "from": {
-                        "startLines": "20,21",
-                        "startColumns": "4,4",
-                        "startOffsets": "656,724",
-                        "endColumns": "67,67",
-                        "endOffsets": "719,787"
-                    },
-                    "to": {
-                        "startLines": "10,11",
-                        "startColumns": "4,4",
-                        "startOffsets": "611,679",
-                        "endColumns": "67,67",
-                        "endOffsets": "674,742"
-                    }
-                },
-                {
-                    "source": "/Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/res/values-sw600dp/template-styles.xml",
+                    "source": "/Users/nguyenhuu/Documents/GitHub/StackScroll/Application/src/main/res/values-sw600dp/template-styles.xml",
                     "from": {
                         "startLines": "27,18",
                         "startColumns": "4,4",
@@ -37,6 +20,23 @@
                         "endLines": "14,22",
                         "endColumns": "12,12",
                         "endOffsets": "862,1229"
+                    }
+                },
+                {
+                    "source": "/Users/nguyenhuu/Documents/GitHub/StackScroll/Application/src/main/res/values-sw600dp/template-dimens.xml",
+                    "from": {
+                        "startLines": "20,21",
+                        "startColumns": "4,4",
+                        "startOffsets": "656,724",
+                        "endColumns": "67,67",
+                        "endOffsets": "719,787"
+                    },
+                    "to": {
+                        "startLines": "10,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "611,679",
+                        "endColumns": "67,67",
+                        "endOffsets": "674,742"
                     }
                 },
                 {
