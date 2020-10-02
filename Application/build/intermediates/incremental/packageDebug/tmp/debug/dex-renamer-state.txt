@@ -1,0 +1,4 @@
+#Fri Oct 02 18:45:11 JST 2020
+base.0=/Users/nguyenhuu/Documents/GitHub/StackingCard/Application/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex
