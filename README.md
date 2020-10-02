@@ -3,14 +3,15 @@ Stack Scroll Sample
 ===================================
 ![](screenshots/main.gif)
 ===================================
-#Compile
+# Compile
 - Android Studio 4
 - graddle 5.1.1
+- [APK](https://github.com/hucancode/StackScroll/releases)
 
-#Control:
+# Control
 - Drag: Scroll through cards.
 - Double tap: Open a card.
 - Long press: Add a card.
 
-#Intergration:
+# Intergration
 - See StackingCardFragment.java
