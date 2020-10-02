@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nguyenhuu/Documents/GitHub/StackingCard/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
+            "outputFile": "/Users/nguyenhuu/Documents/GitHub/StackScroll/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "/Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/d97b2c67bd1efd9f53659d66cde7745f/res/values-mk/values-mk.xml",

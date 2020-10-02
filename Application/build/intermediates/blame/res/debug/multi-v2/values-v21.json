@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nguyenhuu/Documents/GitHub/StackingCard/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/nguyenhuu/Documents/GitHub/StackScroll/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/d97b2c67bd1efd9f53659d66cde7745f/res/values-v21/values-v21.xml",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "/Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/res/values-v21/base-template-styles.xml",
+                    "source": "/Users/nguyenhuu/Documents/GitHub/StackScroll/Application/src/main/res/values-v21/base-template-styles.xml",
                     "from": {
                         "startLines": "20",
                         "startColumns": "4",
