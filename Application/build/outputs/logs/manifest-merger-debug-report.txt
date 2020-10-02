@@ -1,0 +1,157 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:20:1-43:12
+INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:20:1-43:12
+INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:20:1-43:12
+MERGED from [com.android.support:support-v13:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/28ce15237973c308cd17a2f95c4e1cc8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/e34a410806b3026b5fb64e340b3c7785/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/00a3a1bce81d9da9cfbcb767540fe4db/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/d97b2c67bd1efd9f53659d66cde7745f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/733a68fcb521e5cba926df8ec5e6fa0a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/171fe66eae66448bc3b73086eb594e96/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/c0ce8de0c84f4d44678850aed9001420/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/67192e0e3672bfb93598d4af99391e10/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/b855fb77216de8bada730d8c02683f04/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/73099d538b6aa05b1b4cb5d7233380a2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/1931d96d7631014435a7c2b87b4f47cd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/ea2aebfd9788b35d8c2a90b6ef09cbac/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/bb68ec26f483af73cd98447582ab1cf3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/6da74befc96f909feb03191c9a07ebf8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/f87b8d7611716618015db6b720181162/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/87a77aabe416e5e6b57bc64fa133556e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/56ae158d43ef8b91344601d8d8dbcbe0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/910777018f38b2dcf0d19038bdd272e3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/1744b1f7b607a9f89164e6bfc64047f7/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/a78808cf717a477b260471a8ca8cbc5a/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/bb1ea2768e6f09692c2920410c067d2d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/af8df2786c339c928358cde8705e8c8f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/0f1defdcdaf4247c066fd41d27575fd6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/52d8459cfe406febfb15cccb97c537ba/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/c21e5a215fc7a923612bbaa72929b1b4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/72bed67d89f34766ec5bcbb13f6ca90a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/8164faec1a3dd006a4e05a9fe3c69b43/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/4a0075204f27450cdd9c63d33069007d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/a7acc965383870e953ba7a1e7582cf80/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/846ede7d52991d0bd18c695585e9a1e3/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:20:1-43:12
+INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:20:1-43:12
+	package
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:21:5-53
+	android:versionName
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:23:5-30
+		INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:20:11-69
+	android:versionCode
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:22:5-28
+		INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+application
+ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:27:5-40:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/1744b1f7b607a9f89164e6bfc64047f7/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/1744b1f7b607a9f89164e6bfc64047f7/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/a78808cf717a477b260471a8ca8cbc5a/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/a78808cf717a477b260471a8ca8cbc5a/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/1744b1f7b607a9f89164e6bfc64047f7/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:28:9-41
+	android:icon
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:29:9-45
+	android:allowBackup
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:27:18-44
+	android:theme
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:30:9-40
+activity#com.example.android.basicgesturedetect.MainActivity
+ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:32:9-39:20
+	android:label
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:33:19-51
+	android:uiOptions
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:34:19-63
+	android:name
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:32:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:35:13-38:29
+action#android.intent.action.MAIN
+ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml:37:27-74
+uses-sdk
+INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+MERGED from [com.android.support:support-v13:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/28ce15237973c308cd17a2f95c4e1cc8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/28ce15237973c308cd17a2f95c4e1cc8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/e34a410806b3026b5fb64e340b3c7785/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/e34a410806b3026b5fb64e340b3c7785/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/00a3a1bce81d9da9cfbcb767540fe4db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/00a3a1bce81d9da9cfbcb767540fe4db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/d97b2c67bd1efd9f53659d66cde7745f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/d97b2c67bd1efd9f53659d66cde7745f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/733a68fcb521e5cba926df8ec5e6fa0a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/733a68fcb521e5cba926df8ec5e6fa0a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/171fe66eae66448bc3b73086eb594e96/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/171fe66eae66448bc3b73086eb594e96/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/c0ce8de0c84f4d44678850aed9001420/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/c0ce8de0c84f4d44678850aed9001420/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/67192e0e3672bfb93598d4af99391e10/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/67192e0e3672bfb93598d4af99391e10/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/b855fb77216de8bada730d8c02683f04/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/b855fb77216de8bada730d8c02683f04/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/73099d538b6aa05b1b4cb5d7233380a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/73099d538b6aa05b1b4cb5d7233380a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/1931d96d7631014435a7c2b87b4f47cd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/1931d96d7631014435a7c2b87b4f47cd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/ea2aebfd9788b35d8c2a90b6ef09cbac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/ea2aebfd9788b35d8c2a90b6ef09cbac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/bb68ec26f483af73cd98447582ab1cf3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/bb68ec26f483af73cd98447582ab1cf3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/6da74befc96f909feb03191c9a07ebf8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/6da74befc96f909feb03191c9a07ebf8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/f87b8d7611716618015db6b720181162/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/f87b8d7611716618015db6b720181162/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/87a77aabe416e5e6b57bc64fa133556e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/87a77aabe416e5e6b57bc64fa133556e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/56ae158d43ef8b91344601d8d8dbcbe0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/56ae158d43ef8b91344601d8d8dbcbe0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/910777018f38b2dcf0d19038bdd272e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/910777018f38b2dcf0d19038bdd272e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/1744b1f7b607a9f89164e6bfc64047f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/1744b1f7b607a9f89164e6bfc64047f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/a78808cf717a477b260471a8ca8cbc5a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/a78808cf717a477b260471a8ca8cbc5a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/bb1ea2768e6f09692c2920410c067d2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/bb1ea2768e6f09692c2920410c067d2d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/af8df2786c339c928358cde8705e8c8f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/af8df2786c339c928358cde8705e8c8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/0f1defdcdaf4247c066fd41d27575fd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/0f1defdcdaf4247c066fd41d27575fd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/52d8459cfe406febfb15cccb97c537ba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/52d8459cfe406febfb15cccb97c537ba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/c21e5a215fc7a923612bbaa72929b1b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/c21e5a215fc7a923612bbaa72929b1b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/72bed67d89f34766ec5bcbb13f6ca90a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/72bed67d89f34766ec5bcbb13f6ca90a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/8164faec1a3dd006a4e05a9fe3c69b43/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/8164faec1a3dd006a4e05a9fe3c69b43/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/4a0075204f27450cdd9c63d33069007d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/4a0075204f27450cdd9c63d33069007d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/a7acc965383870e953ba7a1e7582cf80/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/a7acc965383870e953ba7a1e7582cf80/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/846ede7d52991d0bd18c695585e9a1e3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/nguyenhuu/.gradle/caches/transforms-2/files-2.1/846ede7d52991d0bd18c695585e9a1e3/AndroidManifest.xml:20:5-44
+INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/nguyenhuu/Documents/GitHub/StackingCard/Application/src/main/AndroidManifest.xml
