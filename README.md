@@ -2,6 +2,7 @@
 Stack Scroll Sample
 ===================================
 ![](screenshots/main.gif)
+![](screenshots/reorder.gif)
 ===================================
 # Compile
 - Android Studio 4
