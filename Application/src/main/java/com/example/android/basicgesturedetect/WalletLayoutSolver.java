@@ -39,7 +39,6 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
         {
             return from + (to - from)*alpha;
         }
-
         public static final float clamp(float min, float max, float alpha)
         {
             return Math.min(max, Math.max(min, alpha));
@@ -59,7 +58,7 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
         Edit,
         EditToList
     }
-    private static final int FRAME_TIME = 1;
+    private static final int FRAME_TIME = 1; // in milisecs
     private static final long LIST_TO_SINGLE_TIME = 1000; // in milisecs
     private static final long SINGLE_TO_LIST_TIME = 1000; // in milisecs
     private static final long EDIT_TO_LIST_TIME = 1000; // in milisecs
@@ -98,10 +97,23 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
         {
             View view = stack.getChildAt(i);
             mStackItems.add(view);
-            view.setElevation(i);
+            view.setAlpha(0.0f);
         }
         stack.setClickable(true);
         stack.setFocusable(true);
+        stack.post( new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i < mStackItems.size(); i++)
+                {
+                    View view = mStackItems.get(i);
+                    view.setElevation(i);
+                    view.setAlpha(1.0f);
+                }
+                updateStack();
+
+            }
+        });
         final GestureDetector gd = new GestureDetector(activity, this);
         stack.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -170,7 +182,6 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
             View item = mStackItems.get(i);
             item.setElevation(i);
         }
-
     }
 
     public void onTouchEvent(MotionEvent e)
@@ -186,9 +197,6 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
             {
                 float y = e.getY() + mCameraY;
                 mEditingCursor = y - mEditingCursorDy;
-                // fix negative clamp, the formular below don't behave well when cursor become negative
-                // mEditingItemTarget = (int) ();
-
                 mEditingItemTarget = (int)Math.floor(mEditingCursor / mItemStackedHeight);
                 mEditingItemTarget = MathC.clamp(-1, mStackItems.size(), mEditingItemTarget);
                 Log.i(TAG,"list edit touch y "+y+" cursor y "+mEditingCursor + " target "+mEditingItemTarget);
@@ -380,7 +388,7 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
         mStack.addView(item,mEditingItemTarget);
         mStackItems.remove(mEditingItem);
         mStackItems.add(mEditingItemTarget, item);
-        item.setAlpha(1.0f);
+        //item.setAlpha(1.0f);
         recalculateItemElevation();
         mState = State.EditToList;
         mEditingCursorTarget = mEditingItemTarget* mItemStackedHeight;
@@ -393,6 +401,9 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
     {
         float time = (System.currentTimeMillis() - mTimeOrigin)/(float) EDIT_TO_LIST_TIME;
         mEditingCursor = MathC.lerp(mEditingCursor, mEditingCursorTarget, time);
+        float alpha =  mStackItems.get(mEditingItemTarget).getAlpha();
+        alpha = MathC.lerp(alpha, 1.0f, time);
+        mStackItems.get(mEditingItemTarget).setAlpha(alpha);
         updateStack();
         if(time > 1.0f)
         {
@@ -421,6 +432,10 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
         if(mState == State.List)
         {
             float y = e.getY() + mCameraY;
+            if(y < 0 || y > mItemStackedHeight*(mStackItems.size() - 1) + mItemHeight)
+            {
+                return false;
+            }
             int i = (int) (y / mItemStackedHeight);
             singleOn(i);
         }
