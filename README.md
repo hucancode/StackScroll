@@ -11,7 +11,7 @@ Stack Scroll Sample
 # Control
 - Drag: Scroll through cards.
 - Tap: Open a card.
-- Long press: Reoder cards.
+- Long press: Reorder cards.
 - Double tap: Add a card.
 
 # Intergration
