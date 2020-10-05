@@ -10,8 +10,9 @@ Stack Scroll Sample
 
 # Control
 - Drag: Scroll through cards.
-- Double tap: Open a card.
-- Long press: Add a card.
+- Tap: Open a card.
+- Long press: Reoder cards.
+- Double tap: Add a card.
 
 # Intergration
 - See StackingCardFragment.java

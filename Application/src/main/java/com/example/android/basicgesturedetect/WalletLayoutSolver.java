@@ -39,7 +39,9 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
         List,
         ListToSingle,
         Single,
-        SingleToList
+        SingleToList,
+        ListEdit,
+        ListEditToList
     }
     private static final int FRAME_TIME = 1;
     private static final long SLIDE_IN_TIME = 1000; // in milisecs
@@ -52,6 +54,8 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
     private float mCameraYTarget;
     private State mState;
     private int mFocusedItem;
+    private int mEditingItem;
+    private int mEditingItemTarget;
 
     private float mItemStackedHeight;
     private float mItemHeight;
@@ -82,6 +86,7 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 gd.onTouchEvent(motionEvent);
+                onTouchEvent(motionEvent);
                 return false;
             }
         });
@@ -100,7 +105,13 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
     public void onLongPress(MotionEvent e) {
         // Touch has been long enough to indicate a long press.
         // Does not indicate motion is complete yet (no up event necessarily)
-        addFakeCard();
+        float y = e.getY() + mCameraY;
+        if(y < 0 || y > mItemStackedHeight*(mStackItems.size() - 1) + mItemHeight)
+        {
+            return;
+        }
+        int index = (int) (y / mItemStackedHeight);
+        editOn(index);
     }
 
     private void addFakeCard()
@@ -127,11 +138,44 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
             mItemStackedHeight = mItemHeight * STACK_RATIO;
         }
     }
+    private void recalculateItemElevation()
+    {
+        for(int i = 0;i<mStackItems.size();i++)
+        {
+            View item = mStackItems.get(i);
+            item.setElevation(i);
+        }
 
+    }
+
+    public void onTouchEvent(MotionEvent e)
+    {
+        if(mState == State.ListEdit)
+        {
+            if (e.getAction() == MotionEvent.ACTION_UP)
+            {
+                editOff();
+                updateStack();
+            }
+            else if(e.getAction() == MotionEvent.ACTION_MOVE)
+            {
+                float y = e.getY() + mCameraY;
+                mEditingItemTarget = (int) (y / mItemStackedHeight);
+                mEditingItemTarget = Math.max(mEditingItemTarget, 0);
+                mEditingItemTarget = Math.min(mEditingItemTarget, mStackItems.size() - 1);
+                Log.i(TAG,"list edit "+y);
+                updateStack();
+            }
+        }
+    }
     @Override
-    public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
-        mCameraY += distanceY;
-        updateStack();
+    public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY)
+    {
+        if(mState == State.List)
+        {
+            mCameraY += distanceY;
+            updateStack();
+        }
         return false;
     }
 
@@ -152,9 +196,19 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
         {
             float origin = i * mItemHeight;
             float target = Math.max(i * mItemStackedHeight, mCameraY);
-            if(mState != State.List && i > mFocusedItem)
+            switch(mState)
             {
-                target += mUnfocusedOffset;
+                case ListToSingle:
+                case SingleToList:
+                case Single:
+                    target += i > mFocusedItem?mUnfocusedOffset:0;
+                    break;
+                case ListEdit:
+                    target += i > mEditingItemTarget?mItemStackedHeight:0;
+                    //target += i == mEditingItemTarget?(mEditingItem > mEditingItemTarget?mItemStackedHeight:-mItemStackedHeight):0;
+                    target -= i > mEditingItem?mItemStackedHeight:0;
+                    target = i == mEditingItem?mEditingItemTarget*mItemStackedHeight:target;
+                    break;
             }
             float margin = target - origin - mCameraY;
             ViewGroup.MarginLayoutParams marginParams = new ViewGroup.MarginLayoutParams(mStackItems.get(i).getLayoutParams());
@@ -185,6 +239,7 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
     @Override
     public boolean onDoubleTap(MotionEvent e) {
         // User tapped the screen twice.
+        addFakeCard();
         return false;
     }
 
@@ -193,19 +248,6 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
         // Since double-tap is actually several events which are considered one aggregate
         // gesture, there's a separate callback for an individual event within the doubletap
         // occurring.  This occurs for down, up, and move.
-        if(e.getAction() == MotionEvent.ACTION_UP)
-        {
-            if(mState == State.List)
-            {
-                float y = e.getY() + mCameraY;
-                int i = (int) (y / mItemStackedHeight);
-                singleOn(i);
-            }
-            else if(mState == State.Single)
-            {
-                singleOff();
-            }
-        }
         return false;
     }
 
@@ -283,10 +325,52 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener 
         }, FRAME_TIME);
     }
 
+    private void editOn(int index)
+    {
+        index = Math.max(index, 0);
+        index = Math.min(index, mStackItems.size() - 1);
+        mEditingItem = index;
+        mEditingItemTarget = index;
+        mState = State.ListEdit;
+        View item = mStack.getChildAt(mEditingItem);
+        item.setElevation(9999);
+        item.setAlpha(0.5f);
+        Log.i(TAG,"edit on");
+    }
+
+    private void editOff()
+    {
+        // move an item from mEditingItem to mEditingItemTarget, then exit edit mode
+        // stack.removeView(item); stack.addView(item,mEditingItemTarget);
+        //mState = State.ListEditToList;
+        View item = mStack.getChildAt(mEditingItem);
+        mStack.removeViewAt(mEditingItem);
+        mStack.addView(item,mEditingItemTarget);
+        mStackItems.remove(mEditingItem);
+        mStackItems.add(mEditingItemTarget, item);
+        item.setAlpha(1.0f);
+        recalculateItemElevation();
+        mState = State.List;
+        Log.i(TAG,"edit off");
+    }
+
     @Override
     public boolean onSingleTapConfirmed(MotionEvent e) {
         // A confirmed single-tap event has occurred.  Only called when the detector has
         // determined that the first tap stands alone, and is not part of a double tap.
+        // Since double-tap is actually several events which are considered one aggregate
+        // gesture, there's a separate callback for an individual event within the doubletap
+        // occurring.  This occurs for down, up, and move.
+        if(mState == State.List)
+        {
+            float y = e.getY() + mCameraY;
+            int i = (int) (y / mItemStackedHeight);
+            singleOn(i);
+        }
+        else if(mState == State.Single)
+        {
+            singleOff();
+        }
         return false;
     }
     // END_INCLUDE(init_gestureListener)
