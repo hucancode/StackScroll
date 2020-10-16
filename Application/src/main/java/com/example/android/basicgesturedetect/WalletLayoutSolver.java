@@ -376,19 +376,16 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener
         int delta = count - mStack.getChildCount();
         for(int i = 0;i < delta;i++)
         {
-            mParentActivity.getLayoutInflater().inflate(mItemTemplate, mStack);
-            mItemPositions.add(0.0f);
-            mItemPositionTargets.add(0.0f);
-//            try
-//            {
-//                mParentActivity.getLayoutInflater().inflate(mItemTemplate, mStack);
-//                mItemPositions.add(0.0f);
-//                mItemPositionTargets.add(0.0f);
-//            }
-//            catch (Exception e)
-//            {
-//                return this;
-//            }
+            try
+            {
+                mParentActivity.getLayoutInflater().inflate(mItemTemplate, mStack);
+                mItemPositions.add(0.0f);
+                mItemPositionTargets.add(0.0f);
+            }
+            catch (Exception e)
+            {
+                return this;
+            }
         }
         for(int i = delta;i < 0;i++)
         {
@@ -463,6 +460,7 @@ public class WalletLayoutSolver extends GestureDetector.SimpleOnGestureListener
         index = CMath.clamp(0, mStack.getChildCount() - 1, index);
         mEditingCursor = index * mStackedHeight;
         mEditingCursorDy = y - mEditingCursor;
+        reanimateItemPosition();
         editOn(index);
     }
 
