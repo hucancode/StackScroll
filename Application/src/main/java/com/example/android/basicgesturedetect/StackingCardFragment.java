@@ -18,15 +18,20 @@ package com.example.android.basicgesturedetect;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.GestureDetector;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.android.common.logger.LogFragment;
 
-public class StackingCardFragment extends Fragment{
+import java.util.Random;
+
+public class StackingCardFragment extends Fragment
+{
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,11 +41,41 @@ public class StackingCardFragment extends Fragment{
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        LinearLayout stack = getActivity().findViewById(R.id.grpStack);
-        LinearLayout detail = getActivity().findViewById(R.id.grpCardDetail);
+        ViewGroup stack = getActivity().findViewById(R.id.grpStack);
         // BEGIN_INCLUDE(init_detector)stack
-        WalletLayoutSolver solver = new WalletLayoutSolver();
-        solver.setup(stack, detail, getActivity());
+        WalletLayoutSolver solver = new WalletLayoutSolver(){
+            @Override
+            public void onBind(int index, View view)
+            {
+                super.onBind(index, view);
+                ImageView graphic = (ImageView)view.findViewById(R.id.imgGraphic);
+                final int cards[] = {R.drawable.credit_card_1,
+                        R.drawable.credit_card_2,
+                        R.drawable.credit_card_3,
+                        R.drawable.credit_card_4 };
+                Random r = new Random();
+                graphic.setImageResource(cards[r.nextInt(cards.length)]);
+            }
+
+            @Override
+            public void onEnterCard(int index, View view)
+            {
+            }
+
+            @Override
+            public void onLeaveCard(int index, View view)
+            {
+            }
+
+            @Override
+            public void onEnterDetailConfirmed(int index)
+            {
+            }
+        };
+        solver.setItemTemplate(R.layout.card_template)
+                .setStackLayout(stack)
+                .setParentActivity(getActivity())
+                .populate(15);
         // END_INCLUDE(init_detector)
     }
 
