@@ -41,6 +41,8 @@ public class StackingCardFragment extends Fragment
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        View logView = getActivity().findViewById(R.id.log_fragment);
+        logView.setVisibility(View.GONE);
         ViewGroup stack = getActivity().findViewById(R.id.grpStack);
         // BEGIN_INCLUDE(init_detector)stack
         WalletLayoutSolver solver = new WalletLayoutSolver(){
